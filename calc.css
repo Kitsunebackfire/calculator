@@ -1,0 +1,219 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    align-self: center;
+    padding-bottom: 50px;
+}
+
+.main-container {
+    align-self: center;
+    background-color: gray;
+    
+    
+    border: 3px solid black;
+    border-radius: 5%;
+    display: grid;
+
+    grid-template-columns: 5px repeat(4, 1fr) 5px;
+    grid-template-rows: 20px repeat(6,1fr) 10px;
+    grid-gap: 10px 10px;
+    
+    width: 280px;
+    height: 400px;
+
+}
+
+.output {
+    background-color: rgba(255, 255, 255, 0.789);
+    border: 2px solid black;
+    text-align: right ;
+    justify-content: center;
+
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    align-self: right;
+    font-size: 12px;
+}
+
+.current-operand {
+    font-size: 23px;
+}
+/* btn class control */
+.btn {
+    border: 3px solid black;
+}
+
+.btn:focus, input:focus {
+    outline: none;
+}
+
+.btn:active {
+    border: 3px solid rgba(255, 255, 255, 0.524);
+}
+
+/* num class control */
+.nums {
+    
+    background-color: rgba(255, 255, 255, 0.666);
+}
+
+.nums:hover {
+    background-color: rgba(255, 255, 255, 0.462);
+}
+
+/* operator class control */
+.operator {
+    font-size: 22px;
+}
+
+
+/* clear and delete control */
+#clear {    
+    background-color: rgb(25, 128, 230);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#clear:hover {
+    background-color: rgba(18, 122, 226, 0.666);
+}
+
+#delete {
+    background-color: rgb(255, 27, 27);
+
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#delete:hover {
+    background-color: rgba(231, 15, 15, 0.945);
+}
+/* numbers and operators control */
+
+#seven {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#eight {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#nine {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#divide {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#four {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#five {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#six {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#multiply {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#one {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;    
+}
+
+#two {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#three {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#subtract {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#point {
+    font-size: 25px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#zero {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#equal {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#addition {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
